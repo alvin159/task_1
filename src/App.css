@@ -1,0 +1,146 @@
+.exercise1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;    
+    height: 500px;
+    background-color: coral;
+}
+
+.exercise2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.exercise3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.btn{
+    margin-left: 100px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.exercise4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.exercise7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+}
+
+.input{
+    margin-left: 10px;
+    width: 200px;
+    border-radius: 20px;
+}
+
+.btn2{
+    background-color: rgb(247, 1, 75);    
+    height: 40px;
+    width: 300px;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.exercise8{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: row;
+    background-color: rgb(41, 207, 41);
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: rgb(84, 84, 194);
+}
+
+.exercise9{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(41, 207, 41);
+    perspective: 1000px; 
+}
+
+.base{    
+    margin-top: 20px;    
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.flip-card-front {
+    background-color: rgb(17, 81, 219);
+    color: black;
+}
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
